@@ -24,23 +24,39 @@ The focus is on secure cloud architecture, network segmentation, identity-based 
 
 ### **Hub–Spoke Virtual Network Model**
 - `vnet-hub` – central routing & VNet peering  
-- `vnet-web`, `vnet-app`, `vnet-db` – isolated spoke tiers following Zero Trust separation  
+- `vnet-web`, `vnet-app`, `vnet-db` – isolated spoke tiers following Zero Trust separation
+![vnet-spoke](https://github.com/user-attachments/assets/2683a4bd-abc5-4f26-8052-8af91dd77668)
+
 
 ### **Strict NSG Rules**
 - Allow **Web → App** (TCP 8080)  
 - Allow **App → DB** (TCP 3306)  
 - Block all outbound internet from App/DB tiers  
-- Deny all unnecessary east–west movement  
+- Deny all unnecessary east–west movement
+![nsg](https://github.com/user-attachments/assets/4de27e00-b5aa-4021-bab9-f0c680e21d30)
+![nsgweb](https://github.com/user-attachments/assets/ebe593b4-401e-4c75-a259-5bbb2012fa6c)
+![nsgapp](https://github.com/user-attachments/assets/4e9ae6c7-3aa3-441e-8f7a-c05f930ebabb)
+![nsgdb](https://github.com/user-attachments/assets/296532ec-61c0-4ff1-bca0-bc082a7cfc74)
+
+
 
 ### **Azure Key Vault**
 - Access controlled via **Managed Identity**  
 - No public access  
-- Secrets retrievable only through **RBAC**  
+- Secrets retrievable only through **RBAC**
+![kva](https://github.com/user-attachments/assets/b95b9c33-c6ee-4663-992c-ed20f6ff04ee)
+
 
 ### **Python App Service**
 - Secure deployment  
 - Runs in an Azure-managed Linux environment  
-- Deployment verified using **Kudu**, container logs and debugging  
+- Deployment verified using **Kudu**, container logs and debugging
+![app](https://github.com/user-attachments/assets/97f4956f-ff60-43cc-99f3-a3ed38285320)
+
+
+## Architecture Diagram
+![rg-zero-trust-project](https://github.com/user-attachments/assets/4c96af21-62c9-4140-a0c5-041c69e9b8d1)
+
 
 ---
 
@@ -91,6 +107,7 @@ A fully functioning, secure, Zero Trust–inspired architecture with:
 - Working Key Vault integration  
 - Proper NSG enforcement  
 - Clean, well-structured Azure deployment  
+![appfut](https://github.com/user-attachments/assets/678824e4-d1e9-451b-b25b-24889161bb90)
 
 ---
 
