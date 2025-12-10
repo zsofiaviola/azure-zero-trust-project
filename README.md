@@ -110,7 +110,8 @@ A fully functioning, secure, Zero Trust–inspired architecture with:
 - Working Key Vault integration  
 - Proper NSG enforcement  
 - Clean, well-structured Azure deployment  
-![appfut](https://github.com/user-attachments/assets/678824e4-d1e9-451b-b25b-24889161bb90)
+![appfut](https://github.com/user-attachments/assets/ff81e26c-9618-4b55-8b03-fe04bc9ec620)
+
 
 ---
 
