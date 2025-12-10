@@ -34,8 +34,11 @@ The focus is on secure cloud architecture, network segmentation, identity-based 
 - Block all outbound internet from App/DB tiers  
 - Deny all unnecessary east–west movement
 ![nsg](https://github.com/user-attachments/assets/4de27e00-b5aa-4021-bab9-f0c680e21d30)
+- NSG-web
 ![nsgweb](https://github.com/user-attachments/assets/ebe593b4-401e-4c75-a259-5bbb2012fa6c)
+- NSG-app
 ![nsgapp](https://github.com/user-attachments/assets/4e9ae6c7-3aa3-441e-8f7a-c05f930ebabb)
+- NSG-db
 ![nsgdb](https://github.com/user-attachments/assets/296532ec-61c0-4ff1-bca0-bc082a7cfc74)
 
 
